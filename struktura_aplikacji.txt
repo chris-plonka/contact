@@ -1,0 +1,64 @@
+contacts-app/
+│
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   │
+│   ├── contacts/
+│   │   ├── page.tsx
+│   │   ├── loading.tsx
+│   │   ├── error.tsx
+│   │   │
+│   │   ├── new/
+│   │   │   └── page.tsx
+│   │   │
+│   │   └── [id]/
+│   │       ├── page.tsx
+│   │       └── edit/
+│   │           └── page.tsx
+│   │
+│   └── api/
+│       └── contacts/
+│           └── route.ts
+│
+├── components/
+│   ├── contacts/
+│   │   ├── ContactList.tsx
+│   │   ├── ContactDetails.tsx
+│   │   ├── ContactCard.tsx
+│   │   ├── ContactForm.tsx
+│   │   ├── ContactSearch.tsx
+│   │   └── DeleteContactButton.tsx
+│   │
+│   ├── layout/
+│   │   ├── Sidebar.tsx
+│   │   ├── Header.tsx
+│   │   └── AppShell.tsx
+│   │
+│   └── ui/
+│       ├── Button.tsx
+│       ├── Input.tsx
+│       ├── Modal.tsx
+│       └── Spinner.tsx
+│
+├── lib/
+│   ├── supabase.ts
+│   ├── contacts.ts
+│   └── validators.ts
+│
+├── hooks/
+│   ├── useContacts.ts
+│   ├── useContact.ts
+│   └── useRealtimeContacts.ts
+│
+├── types/
+│   └── contact.ts
+│
+├── public/
+│   └── avatars/
+│
+├── .env.local
+├── middleware.ts
+├── next.config.ts
+├── package.json
+└── tsconfig.json
