@@ -36,7 +36,7 @@ export default function ContactDetails({
       {avatarUrl ? (
         <img
           src={avatarUrl}
-          className="w-24 h-24  object-cover"
+          className="w-8 md:w-auto lg:w-24 object-cover"
         />
       ) : (
         <div className="w-24 h-24 rounded-full bg-gray-300 flex items-center justify-center">
