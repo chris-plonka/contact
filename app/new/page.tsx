@@ -64,7 +64,7 @@ const avatarUrl = form.avatar_path
   return (
     <div className="bg-white p-4 rounded-xl shadow space-y-3">
       <h2 className="font-bold">Add Contact</h2>
-
+  <span className=""><a href="https://contact.krzysztofplonka.pl">Back</a></span>
       <input
         className="border p-2 w-full"
         placeholder="First Name"

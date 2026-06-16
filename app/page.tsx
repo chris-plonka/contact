@@ -25,6 +25,7 @@ return (
     <div className="h-full overflow-hidden">
       <div className="p-4">
         <ContactDetails contact={selectedContact} />
+		
       </div>
     </div>
 

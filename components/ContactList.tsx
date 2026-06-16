@@ -98,6 +98,7 @@ if (currentIndex === -1) return;
     >
  
       <h2 className="sticky top-0 bg-white/90 backdrop-blur py-3 font-bold border-b z-10">Contacts</h2>
+	  <span className=""><a href="https://contact.krzysztofplonka.pl/new">Add new</a></span>
     <div className="flex-1 overflow-y-auto">
       {contacts.map((c) => {
         const isActive = c.id === selectedContactId;
@@ -121,6 +122,7 @@ if (currentIndex === -1) return;
           </div>
         );
       })}
+	  
     </div>
 
   </div>
