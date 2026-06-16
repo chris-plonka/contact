@@ -1,11 +1,22 @@
-export {};
+// lib/supabase.ts
+import { createClient } from "@supabase/supabase-js";
 
-const { data, error } = await supabase
-  .from("contacts")
-  .select("*");
+export const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
 
-if (error) {
-  console.error(error);
-} else {
-  console.log(data);
+
+
+// hooks/useContacts.ts
+import { supabase } from "../lib/supabase";
+
+export async function getContacts() {
+  const { data, error } = await supabase
+    .from("contacts")
+    .select("*");
+
+  if (error) throw error;
+
+  return data;
 }
