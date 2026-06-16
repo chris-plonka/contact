@@ -1,3 +1,5 @@
+export {};
+
 const { data, error } = await supabase
   .from("contacts")
   .select("*");
