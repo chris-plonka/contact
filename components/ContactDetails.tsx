@@ -32,11 +32,11 @@ export default function ContactDetails({
     : null;
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow">
+    <div className="bg-white w-8 md:w-12 lg:w-24 aspect-square p-6 rounded-xl shadow">
       {avatarUrl ? (
         <img
           src={avatarUrl}
-          className="w-8 md:w-auto lg:w-24 object-cover"
+          className="w-2/3 h-2/3 object-cover"
         />
       ) : (
         <div className="w-24 h-24 rounded-full bg-gray-300 flex items-center justify-center">
